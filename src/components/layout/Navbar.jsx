@@ -16,6 +16,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 flex-shrink-0">
+          <img src="/logo.jpg" alt="Chez Deutch Logo" className="h-10 w-auto rounded-full object-cover border border-slate-200" />
           <span className="text-xl md:text-2xl font-heading font-bold text-primary truncate">chez.deutch</span>
         </Link>
 

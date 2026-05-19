@@ -161,6 +161,10 @@ const Home = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[95vh] flex items-center overflow-hidden text-white bg-secondary-dark">
+        <div className="absolute inset-0 z-0">
+          <img src="/fond.jpg" alt="Chez Deutch Background" className="w-full h-full object-cover opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-b from-secondary-dark/60 via-secondary-dark/40 to-secondary-dark/60" />
+        </div>
         <ParticlesBackground />
         
         <div className="container mx-auto px-4 relative z-10 py-12 md:py-20">
@@ -223,11 +227,15 @@ const Home = () => {
                     />
                     <div className="relative z-10 text-center space-y-4 sm:space-y-8">
                         <motion.div 
-                          className="bg-white/10 p-4 sm:p-8 rounded-[1.5rem] sm:rounded-[2.5rem] inline-flex backdrop-blur-2xl border border-white/20 shadow-inner"
+                          className="bg-white/10 p-4 sm:p-8 rounded-[1.5rem] sm:rounded-[2.5rem] inline-flex backdrop-blur-2xl border border-white/20 shadow-inner overflow-hidden"
                           animate={{ y: [0, -10, 0] }}
                           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                         >
-                            <span className="text-4xl sm:text-7xl drop-shadow-2xl">{slides[currentSlide].icon}</span>
+                            {currentSlide === 0 ? (
+                                <img src="/logo.jpg" alt="Logo Chez Deutch" className="w-20 h-20 sm:w-32 sm:h-32 rounded-full object-cover" />
+                            ) : (
+                                <span className="text-4xl sm:text-7xl drop-shadow-2xl">{slides[currentSlide].icon}</span>
+                            )}
                         </motion.div>
                         <div className="space-y-1 sm:space-y-2">
                             <h3 className="text-xl sm:text-3xl font-heading font-bold tracking-tight">{slides[currentSlide].iconLabel}</h3>
