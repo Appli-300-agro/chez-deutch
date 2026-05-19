@@ -118,28 +118,28 @@ const Home = () => {
 
   const slides = [
     {
-      title: <>L'avenir de <br /> <span className="text-primary-light italic">l'Agriculture</span></>,
-      subtitle: "Semences, Matériel Agricole et Solutions Durables. La référence premium pour les pros et particuliers au Cameroun.",
-      cta1: { label: "Catalogue", link: "/catalogue", icon: true },
-      cta2: { label: "Expertise", link: "/contact" },
-      icon: "☀️",
-      iconLabel: "Solutions Solaires"
+      title: <>L'Expérience <br /> <span className="text-primary-light italic">Chez Deutch</span></>,
+      subtitle: "Restaurant & Lounge au cœur de Bonamoussadi. La référence premium pour vos moments de détente au Cameroun.",
+      cta1: { label: "Découvrir le Menu", link: "/catalogue", icon: true },
+      cta2: { label: "Nous Contacter", link: "/contact" },
+      icon: "🍹",
+      iconLabel: "Cocktails Signatures"
     },
     {
-      title: <>Votre Partenaire <br /> <span className="text-primary-light italic">Stratégique</span></>,
-      subtitle: "chez.deutch accompagne le développement industriel et domestique avec des solutions innovantes et durables.",
-      cta1: { label: "À Propos", link: "/a-propos", icon: false },
-      cta2: { label: "Nos Secteurs", link: "#secteurs", action: scrollToSectors },
-      icon: "🏢",
-      iconLabel: "Expertise Pro"
+      title: <>Saveurs <br /> <span className="text-primary-light italic">Authentiques</span></>,
+      subtitle: "Des poissons et poulets braisés aux pizzas artisanales, savourez le meilleur de la cuisine locale et internationale.",
+      cta1: { label: "Commander", link: "/catalogue", icon: false },
+      cta2: { label: "Nos Spécialités", link: "#secteurs", action: scrollToSectors },
+      icon: "🥘",
+      iconLabel: "Cuisine Gourmet"
     },
     {
-      title: <>Une Équipe <br /> <span className="text-primary-light italic">Dédiée</span></>,
-      subtitle: "Besoin d'un devis personnalisé ou d'une assistance technique ? Nos experts vous répondent sous 24h.",
-      cta1: { label: "Contact", link: "/contact", icon: true },
-      cta2: { label: "WhatsApp", link: "https://wa.me/237600000000" },
-      icon: "📞",
-      iconLabel: "Support 24/7"
+      title: <>Soirées <br /> <span className="text-primary-light italic">Inoubliables</span></>,
+      subtitle: "Karaoké, ambiance lounge et terrasse parisienne. Profitez d'un cadre unique pour vos soirées entre amis ou en famille.",
+      cta1: { label: "Réserver", link: "/contact", icon: true },
+      cta2: { label: "WhatsApp", link: "https://wa.me/237699095743" },
+      icon: "🎤",
+      iconLabel: "Karaoké & Vibes"
     }
   ];
 
@@ -282,10 +282,10 @@ const Home = () => {
         <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
             <div className="space-y-4">
                 <h2 className="text-5xl font-heading font-bold text-secondary-dark tracking-tighter">Sélection Vedette</h2>
-                <p className="text-secondary text-lg font-light">Le meilleur de l'innovation technologique et du confort.</p>
+                <p className="text-secondary text-lg font-light">Le meilleur de notre carte, préparé avec passion.</p>
             </div>
             <Link to="/catalogue" className="group flex items-center text-primary font-bold text-lg hover:text-primary/80 transition-colors">
-                Voir toute la collection 
+                Voir toute la carte 
                 <div className="ml-3 p-2 bg-primary/5 rounded-full group-hover:bg-primary/10 transition-colors">
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -308,18 +308,18 @@ const Home = () => {
       <div ref={sectorsRef}>
         <AnimatedSection className="container mx-auto px-4 bg-slate-50/50 py-16 md:py-24 rounded-[3rem] md:rounded-[4rem] border border-slate-100">
             <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20 space-y-4">
-                <h2 className="text-3xl md:text-5xl font-heading font-bold text-secondary-dark tracking-tighter uppercase">Nos Solutions</h2>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold text-secondary-dark tracking-tighter uppercase">Notre Carte</h2>
                 <div className="h-1 w-16 md:h-1.5 md:w-20 bg-primary mx-auto rounded-full" />
-                <p className="text-secondary text-lg md:text-xl font-light pt-4 px-4">L'art de la gastronomie et du service d'exception.</p>
+                <p className="text-secondary text-lg md:text-xl font-light pt-4 px-4">L'art de la gastronomie et du service d'exception à Douala.</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
                 {CATEGORIES.map((cat, idx) => {
                     const themes = {
-                        'Plats Signatures': { icon: "🥘", color: "from-orange-400 to-red-500" },
-                        'Entrées': { icon: "🥗", color: "from-green-400 to-emerald-600" },
-                        'Boissons': { icon: "🍷", color: "from-blue-400 to-indigo-600" },
-                        'Desserts': { icon: "🍰", color: "from-pink-400 to-rose-500" }
+                        'Spécialités Braisées': { icon: "🔥", color: "from-orange-400 to-red-500" },
+                        'Cuisine Internationale': { icon: "🍕", color: "from-blue-400 to-indigo-600" },
+                        'Cocktails & Boissons': { icon: "🍸", color: "from-pink-400 to-rose-500" },
+                        'Entrées & Tapas': { icon: "🥗", color: "from-green-400 to-emerald-600" }
                     };
                     const theme = themes[cat] || { icon: "🍽️", color: "from-slate-400 to-slate-600" };
                     return <CategoryCard key={idx} title={cat} {...theme} />;

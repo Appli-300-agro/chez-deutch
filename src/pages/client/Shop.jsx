@@ -81,12 +81,12 @@ const Shop = () => {
           {/* Header & Search */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-8">
              <h1 className="text-2xl font-heading font-bold text-secondary-dark">
-                Catalogue {selectedCategory !== 'All' && <span className="text-primary">/ {selectedCategory}</span>}
+                La Carte {selectedCategory !== 'All' && <span className="text-primary">/ {selectedCategory}</span>}
              </h1>
              <div className="relative w-full sm:w-72">
                 <Input 
                     type="text" 
-                    placeholder="Rechercher un produit..." 
+                    placeholder="Rechercher un plat..." 
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="pl-10"
@@ -108,7 +108,7 @@ const Shop = () => {
             </div>
           ) : (
             <div className="text-center py-20 bg-slate-50 rounded-xl border border-dashed border-slate-200">
-                <p className="text-secondary text-lg">Aucun produit ne correspond à votre recherche.</p>
+                <p className="text-secondary text-lg">Aucun plat ne correspond à votre recherche.</p>
                 <Button 
                     variant="outline" 
                     className="mt-4"

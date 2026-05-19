@@ -7,10 +7,10 @@ const About = () => {
       {/* Hero Section */}
       <section className="bg-slate-50 py-20 border-b">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-secondary-dark mb-6">À Propos de chez.deutch</h1>
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-secondary-dark mb-6">À Propos de Chez Deutch</h1>
           <p className="text-lg text-secondary max-w-3xl mx-auto leading-relaxed">
-            votre destination gastronomique d'exception au Cameroun, alliant produits du terroir et savoir-faire culinaire, 
-            les solutions énergétiques durables et la sécurité intelligente.
+            Votre destination gastronomique d'exception au cœur de Douala, alliant saveurs authentiques, 
+            ambiance lounge raffinée et une terrasse parisienne unique pour des moments inoubliables.
           </p>
         </div>
       </section>
@@ -21,35 +21,35 @@ const About = () => {
           <div className="space-y-6">
             <h2 className="text-3xl font-heading font-bold text-primary">Notre Mission</h2>
             <p className="text-secondary leading-relaxed">
-              Afin de renforcer notre visibilité digitale, accroître nos ventes et améliorer l'expérience client, 
-              chez.deutch s'est donné pour mission de fournir des produits alimentaires de haute qualité, sains et savoureux. 
-              Nous accompagnons le secteur agropastoral et souveraineté alimentaire au Cameroun à travers une offre diversifiée et un service premium.
+              Chez Deutch s'est donné pour mission de redéfinir l'expérience culinaire à Douala. 
+              Nous proposons une cuisine fusion qui célèbre les produits du terroir camerounais tout en explorant des saveurs internationales. 
+              Que ce soit pour un déjeuner d'affaires, un dîner en amoureux ou une soirée entre amis, nous garantissons un service premium et une ambiance "Good Vibes Only".
             </p>
             <div className="grid grid-cols-2 gap-6 pt-4">
               <div className="space-y-2">
                 <Target className="text-primary h-8 w-8" />
-                <h4 className="font-bold">Objectif</h4>
-                <p className="text-xs text-secondary">Valoriser l'image et les activités de l'entreprise à travers l'innovation.</p>
+                <h4 className="font-bold">Excellence</h4>
+                <p className="text-xs text-secondary">Offrir une qualité constante dans l'assiette et dans le service.</p>
               </div>
               <div className="space-y-2">
                 <ShieldCheck className="text-primary h-8 w-8" />
-                <h4 className="font-bold">Confiance</h4>
-                <p className="text-xs text-secondary">Garantir une expérience utilisateur fluide, moderne et sécurisée.</p>
+                <h4 className="font-bold">Hospitalité</h4>
+                <p className="text-xs text-secondary">Garantir un accueil chaleureux et une expérience mémorable.</p>
               </div>
             </div>
           </div>
           <div className="bg-primary/5 rounded-3xl p-8 border-2 border-primary/10 border-dashed">
-            <h3 className="text-xl font-bold mb-6 text-secondary-dark">Nos Domaines d'Expertise</h3>
+            <h3 className="text-xl font-bold mb-6 text-secondary-dark">Nos Services</h3>
             <ul className="grid grid-cols-1 gap-3">
               {[
-                "Mobilier de bureau & Décoration",
-                "Électroménager & Froid Industriel",
-                "Groupes Électrogènes (Industriel & Mixte)",
-                "Climatisation & Systèmes de Froid",
-                "Matériel Informatique & Électronique",
-                "Sécurité & Contrôle d'accès biométrique",
-                "Énergie Solaire (Kits & Lampadaires)",
-                "Vaisselle & Arts de la table"
+                "Spécialités Braisées (Poulet, Poisson, Porc)",
+                "Cuisine Internationale (Pizzas, Riz sauté, Burgers)",
+                "Service Traiteur pour vos événements",
+                "Terrasse Parisienne à Bonamoussadi",
+                "Espace Lounge & VIP",
+                "Soirées Karaoké & Musique Live",
+                "Organisation d'anniversaires et fêtes privées",
+                "Cocktails & Boissons Premium"
               ].map(item => (
                 <li key={item} className="flex items-center text-sm text-secondary">
                   <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3" />
@@ -63,13 +63,13 @@ const About = () => {
 
       {/* CTA */}
       <section className="container mx-auto px-4 mb-10 text-center bg-primary p-16 rounded-[2rem] text-white">
-        <h2 className="text-3xl font-bold mb-6">Besoin d'un accompagnement spécifique ?</h2>
+        <h2 className="text-3xl font-bold mb-6">Envie de vivre l'expérience Chez Deutch ?</h2>
         <p className="text-primary-light mb-8 max-w-2xl mx-auto">
-          Qu'il s'agisse d'un mix énergétique industriel ou d'une installation de sécurité intelligente, 
-          nos experts sont à votre disposition.
+          Réservez votre table ou commandez vos plats préférés dès maintenant. 
+          Notre équipe est à votre disposition pour faire de votre visite un moment exceptionnel.
         </p>
         <button className="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition-colors">
-          Contacter un expert
+          Réserver une table
         </button>
       </section>
     </div>

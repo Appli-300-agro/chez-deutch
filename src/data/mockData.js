@@ -2,17 +2,17 @@
 // Images sélectionnées pour leur haute qualité et leur pertinence
 
 const CATEGORY_IMAGES = {
-  'Plats Signatures': ['https://images.unsplash.com/photo-1504674900247-0877df9cc836','https://images.unsplash.com/photo-1555939594-58d7cb561ad1','https://images.unsplash.com/photo-1604329760661-e71dc83f8f26'],
-  'Entrées': ['https://images.unsplash.com/photo-1512621776951-a57141f2eefd','https://images.unsplash.com/photo-1540189549336-e6e99c3679fe','https://images.unsplash.com/photo-1546069901-ba9599a7e63c'],
-  'Boissons': ['https://images.unsplash.com/photo-1544145945-f90425340c7e','https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd','https://images.unsplash.com/photo-1497515114629-f71d768fd07c'],
-  'Desserts': ['https://images.unsplash.com/photo-1563729784474-d77dbb933a9e','https://images.unsplash.com/photo-1551024601-bec78aea704b','https://images.unsplash.com/photo-1565958011703-44f9829ba187']
+  'Spécialités Braisées': ['https://images.unsplash.com/photo-1544025162-d76694265947','https://images.unsplash.com/photo-1555939594-58d7cb561ad1','https://images.unsplash.com/photo-1604329760661-e71dc83f8f26'],
+  'Cuisine Internationale': ['https://images.unsplash.com/photo-1513104890138-7c749659a591','https://images.unsplash.com/photo-1512058564366-18510be2db19','https://images.unsplash.com/photo-1534422298391-e4f8c170db0f'],
+  'Cocktails & Boissons': ['https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b','https://images.unsplash.com/photo-1536935338213-d2c20e9fe9d6','https://images.unsplash.com/photo-1497515114629-f71d768fd07c'],
+  'Entrées & Tapas': ['https://images.unsplash.com/photo-1541014741259-df549fa9ba6f','https://images.unsplash.com/photo-1563379926898-05f4575a45d8','https://images.unsplash.com/photo-1574484284002-952d92456975']
 };
 
 const DISH_NAMES = {
-  'Plats Signatures': ['Ndolé Crevettes & Viande', 'Poulet DG Royal', 'Eru & Garri', 'Koki au Piment Douceur', 'Sanga Traditionnel', 'DG de Poisson Braisé'],
-  'Entrées': ['Salade de Fruits de Mer', 'Accras de Morue croustillants', 'Pastels à la viande', 'Nems Exotiques'],
-  'Boissons': ['Jus de Bissap Maison', 'Foléré Gingembre Frais', 'Jus de Baobab Onctueux', 'Punch Exotique'],
-  'Desserts': ['Beignets Haricot Tradition', 'Gateau à la Banane Plantain', 'Mousse de Mangue', 'Tarte Coco']
+  'Spécialités Braisées': ['Poulet Braisé Maison', 'Poisson Braisé du Jour', 'Saucisses Grillées', 'Brochettes de Bœuf', 'Ailes de Poulet BBQ', 'Porc Braisé'],
+  'Cuisine Internationale': ['Pizza Margherita', 'Pizza Chez Deutch', 'Riz Sauté Spécial', 'Spaghetti Bolognaise', 'Burger Gourmet', 'Frites de Plantain & Poulet'],
+  'Cocktails & Boissons': ['Mojito Classique', 'Cocktail Maison Deutch', 'Bière Locale Fraîche', 'Jus de Bissap Glacé', 'Whisky Premium', 'Vin Rouge Sélection'],
+  'Entrées & Tapas': ['Accras de Morue', 'Nems au Poulet', 'Salade de Saison', 'Planche de Charcuterie', 'Samoussas Bœuf', 'Pilons de Poulet Croustillants']
 };
 const sectorKeys = Object.keys(DISH_NAMES);
 
@@ -29,7 +29,7 @@ const generateProducts = () => {
     products.push({
       id: `prod-${i}`,
       name: productName,
-      description: `Découvrez notre ${dishBaseName}, une solution de la catégorie ${sector} proposée par chez.deutch. Qualité garantie.`,
+      description: `Découvrez notre ${dishBaseName}, une spécialité de la catégorie ${sector} proposée par chez.deutch. Excellence culinaire garantie.`,
       price: 2500 + (Math.floor(Math.random() * 15) * 500),
       category: sector,
       imageUrl: `${imageUrl}?auto=format&fit=crop&q=80&w=800`,

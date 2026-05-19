@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <h3 className="text-white text-lg font-heading font-bold mb-4">chez.deutch</h3>
           <p className="text-sm leading-relaxed">
-            Votre partenaire de confiance pour l'équipement professionnel et domestique au Cameroun.
+            Votre destination gastronomique d'exception à Douala. Restaurant, Lounge et terrasse parisienne à Bonamoussadi.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             <li><Link to="/" className="hover:text-white transition-colors">Accueil</Link></li>
             <li><Link to="/a-propos" className="hover:text-white transition-colors">À Propos</Link></li>
-            <li><Link to="/catalogue" className="hover:text-white transition-colors">Catalogue</Link></li>
+            <li><Link to="/catalogue" className="hover:text-white transition-colors">La Carte</Link></li>
             <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
           </ul>
         </div>
@@ -38,9 +38,9 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-medium mb-4">Contact</h4>
           <ul className="space-y-2 text-sm">
-            <li>Douala, Cameroun</li>
-            <li>contact@chezdeutch.cm</li>
-            <li>+237 696 75 05 29</li>
+            <li>Bonamoussadi, face au stade Terkokam, Douala</li>
+            <li>infos@chezdeutch.com</li>
+            <li>+237 699 09 57 43</li>
           </ul>
         </div>
       
@@ -48,7 +48,8 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-medium mb-4">Suivez-nous</h4>
           <div className="flex gap-4">
-            <a href="https://wa.me/237696750529" target="_blank" rel="noopener" className="hover:text-primary transition-colors"><MessageCircle className="w-5 h-5" /></a>
+            <a href="https://wa.me/237699095743" target="_blank" rel="noopener" className="hover:text-primary transition-colors"><MessageCircle className="w-5 h-5" /></a>
+            <a href="https://www.facebook.com/profile.php?id=100094508701682" target="_blank" rel="noopener" className="hover:text-primary transition-colors"><Facebook className="w-5 h-5" /></a>
             <a href="https://www.tiktok.com/@chez.deutch" target="_blank" rel="noopener" className="hover:text-primary transition-colors"><svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.06 3.43-.3 6.83-1.39 10.12-1.14 3.48-3.41 6.44-7.32 7.15-3.45.71-7.41-.44-9.44-3.3-2.32-3.44-1.49-8.58 1.82-11.3 1.15-.99 2.59-1.56 4.03-1.77V11.2c-1.31.13-2.7.48-3.57 1.6-.63.96-.88 2.12-.83 3.29.19 3.71 4.77 5.23 6.9 2.32.58-.8.69-1.84.67-2.84-.03-3.23-.03-6.46-.03-9.69.02-1.93.01-3.85.01-5.78z"/></svg></a>
           </div>
         </div>
